@@ -24,7 +24,7 @@ const (
 
 var (
 	queryPageRegex   = regexp.MustCompile(`^page\[(\w+)\]$`)
-	queryFieldsRegex = regexp.MustCompile(`^fields\[(\w+)\]$`)
+	queryFieldsRegex = regexp.MustCompile(`^fields\[([\w-]+)\]$`)
 )
 
 type information struct {
